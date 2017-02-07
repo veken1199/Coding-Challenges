@@ -1,0 +1,40 @@
+class LinkedList{
+	
+	public int val;
+	public LinkedList next;
+	
+	public LinkedList(int val){
+		this.val = val;
+		this.next = null;
+	}
+	
+	public void addNext(LinkedList next){
+		this.next = next;
+	}
+	
+	public void addValue(int val){
+		this.val = val;
+	}
+	
+	
+}
+
+
+public static LinkedList addTwoNumbers(LinkedList L, LinkedList LL){
+			
+			LinkedList sum = new LinkedList(0);
+			LinkedList newNode = new LinkedList(0);
+			
+			sum.val = L.val + LL.val;
+			newNode = sum.next;
+			
+			return sum;
+		}
+
+
+public class Solution {
+	public void main(String[] args){
+		
+		
+	}
+}

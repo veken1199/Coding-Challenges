@@ -1,0 +1,55 @@
+class Solutions{
+	
+	public int val;
+	public Solutions next;
+	
+	public Solutions(int val){
+		this.val = val;
+		this.next = null;
+	}
+	
+	public void addNext(Solutions next){
+		this.next = next;
+	}
+	
+	public void addValue(int val){
+		this.val = val;
+	}
+	
+	
+}
+
+
+public static Solutions addTwoNumbers(Solutions L1, Solutions L2){
+			
+			
+			Solutions sum = new Solutions(0);
+			Solutions newNode = sum;
+			
+			while (L1 != null && L2 !=null){
+				
+			sum.val = L1.val + L2.val;
+			newNode = sum.next;
+			L1 = L1.next;
+			L2 = L2.next;
+			
+			}
+			
+			return sum;
+		}
+
+
+public class Solution {
+	public void main(String[] args){
+		
+		Solutions L = new Solutions(2);
+		Solutions LL = new Solutions(22);
+		Solutions S  = new Solutions(3);
+		
+		L.next = LL;
+		LL.next = S;
+		
+		Solutions sum = addTwoNumbers(L,LL);
+		
+	}
+}

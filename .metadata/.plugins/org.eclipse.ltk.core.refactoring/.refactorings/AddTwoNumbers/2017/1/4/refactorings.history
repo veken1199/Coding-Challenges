@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename local variable &apos;LL&apos; in &apos;LinkedList.addTwoNumbers(...)&apos; to &apos;L2&apos;&#x0D;&#x0A;- Original project: &apos;AddTwoNumbers&apos;&#x0D;&#x0A;- Original element: &apos;LinkedList.addTwoNumbers(LinkedList, LinkedList).LL&apos;&#x0D;&#x0A;- Renamed element: &apos;LL&apos;&#x0D;&#x0A;- Update references to refactored element" description="Rename local variable &apos;LL&apos;" id="org.eclipse.jdt.ui.rename.local.variable" input="/src&lt;{Solution.java[LinkedList~addTwoNumbers~QLinkedList;~QLinkedList;@LL!337!349!348!349!QLinkedList;!0!true" name="L2" references="true" stamp="1485120235353" version="1.0"/>
+</session>
