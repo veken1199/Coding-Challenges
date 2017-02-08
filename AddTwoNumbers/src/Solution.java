@@ -14,8 +14,8 @@ public class Solution {
 		
 	}
 	
+	
 	public static ListNode addTwoNumbers(ListNode l1, ListNode l2){
-		
 		
 		ListNode sum = new ListNode(0);
 		ListNode newNode = sum;
