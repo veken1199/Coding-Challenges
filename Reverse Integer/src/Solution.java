@@ -19,24 +19,20 @@ public class Solution {
 			return rev;
 		}
 		
-		
-		
 		else{
 			return reversed((rev*10 + x%10), x/10);
 		}
 	}
 	
+	
 	public static int reverse(int x) {
-		
 		return (int)reversed(0,x);
-		
 	}
     
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		System.out.println(reverse(1534236469));
-		System.out.println();
 	}
 
 }
