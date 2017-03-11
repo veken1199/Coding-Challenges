@@ -18,7 +18,6 @@ public class solutionTest {
 		assert sol.isPrime(17) == true;
 		assert sol.isPrime(59) == true;
 		
-		
 	}
 
 }
