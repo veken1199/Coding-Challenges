@@ -1,3 +1,17 @@
+import java.util.ArrayList;
+import java.util.List;
+
+
+
+class Node {
+	public int x;
+	public InnerNode xx;
+	
+	private class InnerNode { 
+		public int innerX;
+	}
+}
+
 public class Solution {
 	
 //	You are given two non-empty linked lists representing two non-negative integers. The digits are stored in reverse order and each of their nodes contain a single digit. Add the two numbers and return it as a linked list.
@@ -8,6 +22,11 @@ public class Solution {
 //	Output: 7 -> 0 -> 8
 	
 	public static void main(String[] args) {
+		
+		Node n = new Node();
+		Node.InnerNode xxx = new Node.InnerNode();
+		
+		
 		
 		ListNode L = new ListNode(6);
 		ListNode LL = new ListNode(5);
@@ -25,6 +44,13 @@ public class Solution {
 		while(sum != null){
  			sum.toString();
 			sum = sum.next;
+		}
+		
+		List<Integer> x = new ArrayList<Integer>();
+		int[] xx = {1,23,4};
+		int d = xx.length;
+		for(int c : xx){
+			System.out.print(c);
 		}
 		
 	}
