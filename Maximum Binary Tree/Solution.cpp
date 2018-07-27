@@ -25,20 +25,13 @@ public:
         if(start > end) {
             return nullptr;
         }
-        
-        cout << "Start: " << start <<"End: " << end << endl;
-       
         int maxIndexVal = maxIndex(nums, start, end);
-        
         // Create the tree
         TreeNode* headNode = new TreeNode(nums[maxIndexVal]);
-        
         // Setting the left subtree
         headNode->left = constructMaximumBinaryTree(nums, start, maxIndexVal-1);
-        
         // Setting the right subtree
         headNode->right = constructMaximumBinaryTree(nums, maxIndexVal+1, end);
-        
         return headNode;
     }
     
