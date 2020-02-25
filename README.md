@@ -1,1 +1,7 @@
-# Those are general java/c++/python/js programming challenges from leet code 
+# Those are general programming challenges from leet code 
+
+### Languages
+- java
+- c++
+- python
+- js
